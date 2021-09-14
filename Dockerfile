@@ -14,6 +14,8 @@ RUN apt-get install -yqq mtr
 RUN apt-get install -yqq nano
 RUN apt-get install -yqq mtools
 RUN apt-get install -yqq sudo
+RUN apt-get install -yqq curl
+RUN apt-get install -yqq apt-utils
 RUN echo 'root:root' |chpasswd
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
